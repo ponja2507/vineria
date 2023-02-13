@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    background-image: url("../img/fondofooter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    .infoContacto {
+        color: white;
+        width: 400px;
+        order: 2;
+        text-align: right;
+        justify-items: right;
+        h2 {
+            width: 350px;
+            position: relative;
+            text-shadow: $sombra-letra;
+        }
+        p {
+            text-shadow: $sombra-letra;
+            margin-right: nth($tamano, 2);
+        }
+    }
+    .totalRedes {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        a{
+            .redes {
+                height: nth($tamano, 6);
+                margin: nth($tamano, 2);
+                margin-bottom: nth($tamano, 4);
+            }
+        }
+    }
+}
+
+
+

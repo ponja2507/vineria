@@ -1,0 +1,39 @@
+/*! ------------------------- HEADER ------------------------- */
+
+header {
+    background-image: url("../img/fondoheader.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: space-between;
+    .logo{
+        filter: invert(100%);
+    }
+    .barra{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: row;
+        div{
+            display: flex;
+            justify-content: flex-end !important;
+            align-items: flex-end;
+            button{
+                display: flex;
+                justify-content: flex-end;
+            }
+            div{
+                ul{
+                    .nav-item{
+                        a{
+                            font-size: larger;
+                            text-shadow: $sombra-letra;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

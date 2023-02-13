@@ -1,0 +1,329 @@
+@media (max-width: 1350px) {
+    .main-index{
+        h1 {
+            font-size: 250%;
+        }
+        .impar {
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            align-items: center;
+            img {
+                width: 500px;
+            }
+            p {
+                font-size: large;
+                margin: 5px;
+            }
+        }
+        .par {
+            flex-direction: column-reverse;
+            margin: 5px;
+            padding: 5px;
+            align-items: center;
+            img {
+                width: 500px;
+            }
+            p {
+                font-size: large;
+                margin: 5px;
+            }
+        }
+    } 
+    .main-bodegas{
+        .catena{
+            grid-template-columns: 1fr;
+            .img-bodegas1{
+                grid-template-areas: 
+                "cat7 cat2 cat5"
+                "cat7 cat1 cat1";
+            }
+            .cat3{
+                display: none;
+            }
+            .cat4{
+                display: none;
+            }
+            .cat6{
+                display: none;
+            }
+            .cat8{
+                display: none;
+            }
+            .cat9{
+                display: none;
+            }
+        }
+        .zuccardi{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "text-zuc"
+            "img-zuc";
+            .text-zuccardi{
+                grid-area: text-zuc;
+            }
+            .img-bodegas2{
+                grid-area: img-zuc;
+                grid-template-areas: 
+                "zuc8 zuc3 zuc3"
+                "zuc7 zuc7 zuc1";
+            }
+            .zuc2{
+                display: none;
+            }
+            .zuc4{
+                display: none;
+            }
+            .zuc5{
+                display: none;
+            }
+            .zuc6{
+                display: none;
+            }
+            .zuc9{
+                display: none;
+            }
+        }
+    }
+    .main-acceder{
+        section{
+            grid-template-areas: 
+            "nvo"
+            "acc";
+        }
+    }
+}
+
+@media (max-width: 785px) {
+    header {
+        background-size: auto;
+        .logo{
+            img{
+                height: 200px;
+            }
+        }
+    }
+
+    .main-index{
+        h1 {
+            font-size: 200%;
+        }
+        .impar {
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            align-items: center;
+            img {
+                width: 300px;
+            }
+            p {
+                font-size: small;
+                margin: 5px;
+            }
+        }
+        .par {
+            flex-direction: column-reverse;
+            margin: 5px;
+            padding: 5px;
+            align-items: center;
+            img {
+                width: 300px;
+            }
+            p {
+                font-size: small;
+                margin: 5px;
+            }
+        }
+    } 
+    .main-bodegas{
+        .catena{
+            margin: 15px 2px 15px 2px;
+            grid-template-columns: 1fr;
+            .text-catena{
+                margin: 0px;
+                p{
+                    margin: 15px 2px 15px 2px;
+                    font-size: small;
+                }
+            }
+            .img-bodegas1{
+                grid-template-areas: 
+                "cat2"
+                "cat6";
+            }
+            .cat1{
+                display: none;
+            }
+            .cat2{
+                display: block;
+            }
+            .cat3{
+                display: none;
+            }
+            .cat4{
+                display: none;
+            }
+            .cat5{
+                display: none;
+            }
+            .cat6{
+                display: block;
+            }
+            .cat7{
+                display: none;
+            }
+            .cat8{
+                display: none;
+            }
+            .cat9{
+                display: none;
+            }
+        }
+        .zuccardi{
+            margin: 15px 2px 15px 2px;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "text-zuc"
+            "img-zuc";
+            .text-zuccardi{
+                grid-area: text-zuc;
+                margin: 0px;
+                p{
+                    margin: 15px 2px 15px 2px;
+                    font-size: small;
+                }
+            }
+            .img-bodegas2{
+                grid-area: img-zuc;
+                grid-template-areas: 
+                "zuc6"
+                "zuc4";
+            }
+            .zuc1{
+                display: none;
+            }
+            .zuc2{
+                display: none;
+            }
+            .zuc3{
+                display: none;
+            }
+            .zuc4{
+                display: block;
+            }
+            .zuc5{
+                display: none;
+            }
+            .zuc6{
+                display: block;
+            }
+            .zuc7{
+                display: none;
+            }
+            .zuc8{
+                display: none;
+            }
+            .zuc9{
+                display: none;
+            }
+        }
+    }
+
+    .main-contacto{
+        flex-direction: column;
+        form{
+            order: 0;
+            width: 70%;
+        }
+        iframe{
+            width: 80%;
+        }
+    }
+
+    .main-acceder{
+        section{
+            .nuevo{
+                grid-template-areas: 
+                "nomb nomb"
+                "ape ape"
+                "mail mail"
+                "pass pass"
+                "dir dir"
+                "piso dpto"
+                "city cp"
+                "prov prov"
+                "check check"
+                "enviar enviar";
+            }
+        }
+    }
+
+    footer{
+        .infoContacto {
+            width: 175px;
+            h2 {
+                width: 175px;
+            }
+            p {
+                font-size: smaller;
+            }
+        }
+        .totalRedes {
+            flex-direction: column;
+            a{
+                .redes {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .main-contacto{
+        form{
+            width: 90%;
+        }
+        iframe{
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    .main-acceder{
+        section{
+            .nuevo{
+                grid-template-areas: 
+                "nomb"
+                "ape"
+                "mail"
+                "pass"
+                "dir"
+                "piso"
+                "dpto"
+                "city"
+                "cp"
+                "prov"
+                "check"
+                "enviar";
+                .check{
+                    div{
+                        input{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        label{
+                            font-size: 19px;
+                        }
+                    }
+                }
+                .enviar{
+                    display: grid;
+                    justify-items: center;
+                }
+            }
+        }
+    }
+}

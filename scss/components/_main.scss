@@ -1,0 +1,527 @@
+/*! ------------------------- MAIN ------------------------- */
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 400%;
+    }
+    .impar {
+        display: flex;
+        margin: nth($tamano, 4);
+        text-align: justify;
+        align-items: center;
+        img {
+            width: 50%;
+        }
+        p {
+            margin-right: nth($tamano, 5);
+            font-size: larger;
+        }
+    }
+    .par {
+        display: flex;
+        margin: nth($tamano, 4);
+        text-align: justify;
+        align-items: center;
+        img {
+            width: 50%;
+        }
+        p {
+            margin-left: nth($tamano, 5);
+            font-size: larger;
+        }
+    }
+}
+
+.mainProd {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        "buscar"
+        "prod";
+    .buscador {
+        width: 70%;
+        margin: nth($tamano, 4);
+        padding: 7px;
+        padding-left: 10px;
+        border: 1.5px black solid;
+        border-radius: 4px;
+        font-size: large;
+        grid-area: buscar;
+    }
+    .productos {
+        max-width: 1500px;
+        @extend %flex;
+        flex-wrap: wrap;
+        margin-top: nth($tamano, 5);
+        margin-bottom: nth($tamano, 5);
+        grid-area: prod;
+        div {
+            @extend %flex;
+            text-align: center;
+            margin: nth($tamano, 2);
+            width: 300px;
+            height: 450px;
+            justify-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            &hover{
+                box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+                -webkit-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+                -moz-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+                transform: scale(1.1) translateY(-10px);
+                border-radius: 10px;
+            img {
+                height: 250px;
+                width: 200px;
+            }
+            h2 {
+                height: 100px;
+            }
+            button {
+                height: 50px;
+                width: 100px;
+            }
+            }
+        }
+    }
+}
+
+.main-bodegas{
+    .catena {
+        margin: nth($tamano, 4);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        .text-catena {
+            margin: nth($tamano, 3);
+            @extend %flex;
+            flex-direction: column;
+            font-size: x-large;
+            text-align: center;
+            h2 {
+                margin: nth($tamano, 2);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 60px;
+            }
+            p {
+                margin: nth($tamano, 4);
+            }
+        }
+        .img-bodegas1 {
+            display: grid;
+            grid-auto-rows: 300px;
+            gap: nth($tamano, 3);
+            grid-template-areas:
+                "cat1 cat1 cat2"
+                "cat3 cat4 cat5"
+                "cat7 cat6 cat8"
+                "cat7 cat9 cat9";
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+                -webkit-box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+                -moz-box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+            }
+            .cat1 {
+                grid-area: cat1;
+            }
+            
+            .cat2 {
+                grid-area: cat2;
+            }
+            
+            .cat3 {
+                grid-area: cat3;
+            }
+            
+            .cat4 {
+                grid-area: cat4;
+            }
+            
+            .cat5 {
+                grid-area: cat5;
+            }
+            
+            .cat6 {
+                grid-area: cat6;
+            }
+            
+            .cat7 {
+                grid-area: cat7;
+            }
+            
+            .cat8 {
+                grid-area: cat8;
+            }
+            
+            .cat9 {
+                grid-area: cat9;
+            }
+        }
+    }
+    .zuccardi {
+        margin: nth($tamano, 4);
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .text-zuccardi {
+            margin: nth($tamano, 3);
+            @extend %flex;
+            flex-direction: column;
+            font-size: x-large;
+            text-align: center;
+            h2 {
+                margin: nth($tamano, 2);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 60px;
+            }
+            p {
+                margin: nth($tamano, 4);
+            }
+        }
+        .img-bodegas2 {
+            display: grid;
+            grid-auto-rows: 300px;
+            gap: nth($tamano, 3);
+            grid-template-areas:
+                "zuc1 zuc3 zuc3"
+                "zuc5 zuc5 zuc4"
+                "zuc2 zuc8 zuc6"
+                "zuc7 zuc7 zuc9";
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+                -webkit-box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+                -moz-box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+            }
+            .zuc1 {
+                grid-area: zuc1;
+            }
+            
+            .zuc2 {
+                grid-area: zuc2;
+            }
+            
+            .zuc3 {
+                grid-area: zuc3;
+            }
+            
+            .zuc4 {
+                grid-area: zuc4;
+            }
+            
+            .zuc5 {
+                grid-area: zuc5;
+            }
+            
+            .zuc6 {
+                grid-area: zuc6;
+            }
+            
+            .zuc7 {
+                grid-area: zuc7;
+            }
+            
+            .zuc8 {
+                grid-area: zuc8;
+            }
+            
+            .zuc9 {
+                grid-area: zuc9;
+            }
+        }
+    }
+}
+.main-contacto{
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/15/02/42/floor-1256804_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: $sombra-letra;
+    color: white;
+    form{
+        order: 1;
+        width: 50%;
+        .cont{
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+        }
+        .nomb-cont{
+            display: flex;
+            justify-content: space-around;
+            input{
+                @extend %input;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .ape-cont{
+            display: flex;
+            justify-content: space-around;
+            input{
+                @extend %input;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .mail-cont{
+            display: flex;
+            justify-content: space-around;
+            input{
+                @extend %input;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .msj-cont{
+            display: flex;
+            justify-content: space-around;
+            input{
+                border: solid black 1px;
+                border-radius: 10px;
+                font-size: 20px;
+                padding: 5px;
+            }
+        }
+        .botones-cont{
+            margin: 12px;
+            display: flex;
+            justify-content: center;
+            .env-cont{
+                margin-right: 20px;
+            }
+            .borr-cont{
+                margin-left: 20px;
+            }
+        }
+    }
+    iframe{
+        margin: 25px;
+        width: 50%;
+        height: 500px;
+    }
+}
+
+.main-acceder{
+    section{
+        display: grid;
+        grid-template-areas: 
+        "nvo nvo acc";
+        .nuevo{
+            background-image: url("https://cdn0.casamientos.com.ar/vendor/1758/3_2/960/jpg/bodas-7_7_111758.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-area: nvo;
+            display: grid;
+            text-shadow: $sombra-letra;
+            color: white;
+            grid-template-areas: 
+            "nomb nomb ape ape"
+            "mail mail pass pass"
+            "dir dir piso dpto"
+            "city city prov cp"
+            "check check check check"
+            "enviar enviar enviar enviar";
+            .nomb{
+                @extend %flexform;
+                @include div(15px, nomb);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .ape{
+                @extend %flexform;
+                @include div(15px, ape);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .correo{
+                @extend %flexform;
+                @include div(15px, mail);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .pass{
+                @extend %flexform;
+                @include div(15px, pass);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .dir{
+                @extend %flexform;
+                @include div(15px, dir);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .piso{
+                @extend %flexform;
+                @include div(15px, piso);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .dpto{
+                @extend %flexform;
+                @include div(15px, dpto);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .city{
+                @extend %flexform;
+                @include div(15px, city);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .prov{
+                @extend %flexform;
+                @include div(15px, prov);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                select{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                    option{
+                        font-size: 17px
+                    }
+                }
+            }
+            .cp{
+                @extend %flexform;
+                @include div(15px, cp);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .check{
+                @extend %flexform;
+                @include div(15px, check);
+                div{
+                    input{
+                        @extend %input;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    label{
+                        font-size: nth($tamano, 5);
+                    }
+                }
+            }
+            .enviar{
+                @include div(15px, enviar);
+                button{
+                    font-size: 30px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .ingreso{
+            background-color: rgb(245, 245, 245);
+            grid-area: acc;
+            display: grid;
+            grid-template-areas: 
+            "mail1"
+            "pass1"
+            "ingre";
+            .mail1{
+                @extend %flexform;
+                justify-content: flex-end;
+                @include div(25px, mail1);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .pass1{
+                @extend %flexform;
+                justify-content: center;
+                @include div(25px, pass1);
+                label{
+                    font-size: nth($tamano, 5);
+                }
+                input{
+                    @extend %input;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+            .ingresa{
+                display: flex;
+                @include div(15px, ingre);
+                justify-content: center;
+                align-items: flex-start;
+                button{
+                    font-size: 30px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+

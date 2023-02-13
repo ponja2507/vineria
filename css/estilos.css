@@ -1,0 +1,621 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Extends */
+.main-contacto form .nomb-cont input, .main-contacto form .ape-cont input, .main-contacto form .mail-cont input, .main-acceder section .nuevo .nomb input, .main-acceder section .nuevo .ape input, .main-acceder section .nuevo .correo input, .main-acceder section .nuevo .pass input, .main-acceder section .nuevo .dir input, .main-acceder section .nuevo .piso input, .main-acceder section .nuevo .dpto input, .main-acceder section .nuevo .city input, .main-acceder section .nuevo .prov select, .main-acceder section .nuevo .cp input, .main-acceder section .nuevo .check div input, .main-acceder section .ingreso .mail1 input, .main-acceder section .ingreso .pass1 input {
+  border: solid black 1px;
+  height: 50px;
+  font-size: 20px; }
+
+.mainProd .productos, .mainProd .productos div, .main-bodegas .catena .text-catena, .main-bodegas .zuccardi .text-zuccardi {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main-acceder section .nuevo .nomb, .main-acceder section .nuevo .ape, .main-acceder section .nuevo .correo, .main-acceder section .nuevo .pass, .main-acceder section .nuevo .dir, .main-acceder section .nuevo .piso, .main-acceder section .nuevo .dpto, .main-acceder section .nuevo .city, .main-acceder section .nuevo .prov, .main-acceder section .nuevo .cp, .main-acceder section .nuevo .check, .main-acceder section .ingreso .mail1, .main-acceder section .ingreso .pass1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; }
+
+/* Variables */
+/* Listas */
+/*  Mixins */
+/*! ------------------------- HEADER ------------------------- */
+header {
+  background-image: url("../img/fondoheader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: space-between; }
+  header .logo {
+    filter: invert(100%); }
+  header .barra {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row; }
+    header .barra div {
+      display: flex;
+      justify-content: flex-end !important;
+      align-items: flex-end; }
+      header .barra div button {
+        display: flex;
+        justify-content: flex-end; }
+      header .barra div div ul .nav-item a {
+        font-size: larger;
+        text-shadow: -2px -2px 2px black, 2px -2px 2px black, 2px 2px 2px black, -2px 2px 2px black; }
+
+/*! ------------------------- MAIN ------------------------- */
+.main-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .main-index h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 400%; }
+  .main-index .impar {
+    display: flex;
+    margin: 20px;
+    text-align: justify;
+    align-items: center; }
+    .main-index .impar img {
+      width: 50%; }
+    .main-index .impar p {
+      margin-right: 30px;
+      font-size: larger; }
+  .main-index .par {
+    display: flex;
+    margin: 20px;
+    text-align: justify;
+    align-items: center; }
+    .main-index .par img {
+      width: 50%; }
+    .main-index .par p {
+      margin-left: 30px;
+      font-size: larger; }
+
+.mainProd {
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "buscar" "prod"; }
+  .mainProd .buscador {
+    width: 70%;
+    margin: 20px;
+    padding: 7px;
+    padding-left: 10px;
+    border: 1.5px black solid;
+    border-radius: 4px;
+    font-size: large;
+    grid-area: buscar; }
+  .mainProd .productos {
+    max-width: 1500px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-area: prod; }
+    .mainProd .productos div {
+      text-align: center;
+      margin: 10px;
+      width: 300px;
+      height: 450px;
+      justify-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      .mainProd .productos divhover {
+        box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+        -webkit-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+        -moz-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+        transform: scale(1.1) translateY(-10px);
+        border-radius: 10px; }
+        .mainProd .productos divhover img {
+          height: 250px;
+          width: 200px; }
+        .mainProd .productos divhover h2 {
+          height: 100px; }
+        .mainProd .productos divhover button {
+          height: 50px;
+          width: 100px; }
+
+.main-bodegas .catena {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+  .main-bodegas .catena .text-catena {
+    margin: 15px;
+    flex-direction: column;
+    font-size: x-large;
+    text-align: center; }
+    .main-bodegas .catena .text-catena h2 {
+      margin: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 60px; }
+    .main-bodegas .catena .text-catena p {
+      margin: 20px; }
+  .main-bodegas .catena .img-bodegas1 {
+    display: grid;
+    grid-auto-rows: 300px;
+    gap: 15px;
+    grid-template-areas: "cat1 cat1 cat2" "cat3 cat4 cat5" "cat7 cat6 cat8" "cat7 cat9 cat9"; }
+    .main-bodegas .catena .img-bodegas1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+      -webkit-box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43); }
+    .main-bodegas .catena .img-bodegas1 .cat1 {
+      grid-area: cat1; }
+    .main-bodegas .catena .img-bodegas1 .cat2 {
+      grid-area: cat2; }
+    .main-bodegas .catena .img-bodegas1 .cat3 {
+      grid-area: cat3; }
+    .main-bodegas .catena .img-bodegas1 .cat4 {
+      grid-area: cat4; }
+    .main-bodegas .catena .img-bodegas1 .cat5 {
+      grid-area: cat5; }
+    .main-bodegas .catena .img-bodegas1 .cat6 {
+      grid-area: cat6; }
+    .main-bodegas .catena .img-bodegas1 .cat7 {
+      grid-area: cat7; }
+    .main-bodegas .catena .img-bodegas1 .cat8 {
+      grid-area: cat8; }
+    .main-bodegas .catena .img-bodegas1 .cat9 {
+      grid-area: cat9; }
+
+.main-bodegas .zuccardi {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+  .main-bodegas .zuccardi .text-zuccardi {
+    margin: 15px;
+    flex-direction: column;
+    font-size: x-large;
+    text-align: center; }
+    .main-bodegas .zuccardi .text-zuccardi h2 {
+      margin: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 60px; }
+    .main-bodegas .zuccardi .text-zuccardi p {
+      margin: 20px; }
+  .main-bodegas .zuccardi .img-bodegas2 {
+    display: grid;
+    grid-auto-rows: 300px;
+    gap: 15px;
+    grid-template-areas: "zuc1 zuc3 zuc3" "zuc5 zuc5 zuc4" "zuc2 zuc8 zuc6" "zuc7 zuc7 zuc9"; }
+    .main-bodegas .zuccardi .img-bodegas2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+      -webkit-box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: 10px 10px 9px -6px rgba(0, 0, 0, 0.43); }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc1 {
+      grid-area: zuc1; }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc2 {
+      grid-area: zuc2; }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc3 {
+      grid-area: zuc3; }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc4 {
+      grid-area: zuc4; }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc5 {
+      grid-area: zuc5; }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc6 {
+      grid-area: zuc6; }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc7 {
+      grid-area: zuc7; }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc8 {
+      grid-area: zuc8; }
+    .main-bodegas .zuccardi .img-bodegas2 .zuc9 {
+      grid-area: zuc9; }
+
+.main-contacto {
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/15/02/42/floor-1256804_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: -2px -2px 2px black, 2px -2px 2px black, 2px 2px 2px black, -2px 2px 2px black;
+  color: white; }
+  .main-contacto form {
+    order: 1;
+    width: 50%; }
+    .main-contacto form .cont {
+      display: flex;
+      justify-content: center;
+      margin: 25px; }
+    .main-contacto form .nomb-cont {
+      display: flex;
+      justify-content: space-around; }
+      .main-contacto form .nomb-cont input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-contacto form .ape-cont {
+      display: flex;
+      justify-content: space-around; }
+      .main-contacto form .ape-cont input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-contacto form .mail-cont {
+      display: flex;
+      justify-content: space-around; }
+      .main-contacto form .mail-cont input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-contacto form .msj-cont {
+      display: flex;
+      justify-content: space-around; }
+      .main-contacto form .msj-cont input {
+        border: solid black 1px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 5px; }
+    .main-contacto form .botones-cont {
+      margin: 12px;
+      display: flex;
+      justify-content: center; }
+      .main-contacto form .botones-cont .env-cont {
+        margin-right: 20px; }
+      .main-contacto form .botones-cont .borr-cont {
+        margin-left: 20px; }
+  .main-contacto iframe {
+    margin: 25px;
+    width: 50%;
+    height: 500px; }
+
+.main-acceder section {
+  display: grid;
+  grid-template-areas: "nvo nvo acc"; }
+  .main-acceder section .nuevo {
+    background-image: url("https://cdn0.casamientos.com.ar/vendor/1758/3_2/960/jpg/bodas-7_7_111758.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: nvo;
+    display: grid;
+    text-shadow: -2px -2px 2px black, 2px -2px 2px black, 2px 2px 2px black, -2px 2px 2px black;
+    color: white;
+    grid-template-areas: "nomb nomb ape ape" "mail mail pass pass" "dir dir piso dpto" "city city prov cp" "check check check check" "enviar enviar enviar enviar"; }
+    .main-acceder section .nuevo .nomb {
+      margin: 10px;
+      grid-area: nomb; }
+      .main-acceder section .nuevo .nomb label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .nomb input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .ape {
+      margin: 10px;
+      grid-area: ape; }
+      .main-acceder section .nuevo .ape label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .ape input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .correo {
+      margin: 10px;
+      grid-area: mail; }
+      .main-acceder section .nuevo .correo label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .correo input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .pass {
+      margin: 10px;
+      grid-area: pass; }
+      .main-acceder section .nuevo .pass label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .pass input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .dir {
+      margin: 10px;
+      grid-area: dir; }
+      .main-acceder section .nuevo .dir label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .dir input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .piso {
+      margin: 10px;
+      grid-area: piso; }
+      .main-acceder section .nuevo .piso label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .piso input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .dpto {
+      margin: 10px;
+      grid-area: dpto; }
+      .main-acceder section .nuevo .dpto label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .dpto input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .city {
+      margin: 10px;
+      grid-area: city; }
+      .main-acceder section .nuevo .city label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .city input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .prov {
+      margin: 10px;
+      grid-area: prov; }
+      .main-acceder section .nuevo .prov label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .prov select {
+        padding: 5px;
+        border-radius: 10px; }
+        .main-acceder section .nuevo .prov select option {
+          font-size: 17px; }
+    .main-acceder section .nuevo .cp {
+      margin: 10px;
+      grid-area: cp; }
+      .main-acceder section .nuevo .cp label {
+        font-size: 30px; }
+      .main-acceder section .nuevo .cp input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .nuevo .check {
+      margin: 10px;
+      grid-area: check; }
+      .main-acceder section .nuevo .check div input {
+        width: 30px;
+        height: 30px; }
+      .main-acceder section .nuevo .check div label {
+        font-size: 30px; }
+    .main-acceder section .nuevo .enviar {
+      margin: 10px;
+      grid-area: enviar; }
+      .main-acceder section .nuevo .enviar button {
+        font-size: 30px;
+        border-radius: 10px; }
+  .main-acceder section .ingreso {
+    background-color: whitesmoke;
+    grid-area: acc;
+    display: grid;
+    grid-template-areas: "mail1" "pass1" "ingre"; }
+    .main-acceder section .ingreso .mail1 {
+      justify-content: flex-end;
+      margin: 20px;
+      grid-area: mail1; }
+      .main-acceder section .ingreso .mail1 label {
+        font-size: 30px; }
+      .main-acceder section .ingreso .mail1 input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .ingreso .pass1 {
+      justify-content: center;
+      margin: 20px;
+      grid-area: pass1; }
+      .main-acceder section .ingreso .pass1 label {
+        font-size: 30px; }
+      .main-acceder section .ingreso .pass1 input {
+        padding: 5px;
+        border-radius: 10px; }
+    .main-acceder section .ingreso .ingresa {
+      display: flex;
+      margin: 10px;
+      grid-area: ingre;
+      justify-content: center;
+      align-items: flex-start; }
+      .main-acceder section .ingreso .ingresa button {
+        font-size: 30px;
+        border-radius: 10px; }
+
+footer {
+  display: flex;
+  background-image: url("../img/fondofooter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between; }
+  footer .infoContacto {
+    color: white;
+    width: 400px;
+    order: 2;
+    text-align: right;
+    justify-items: right; }
+    footer .infoContacto h2 {
+      width: 350px;
+      position: relative;
+      text-shadow: -2px -2px 2px black, 2px -2px 2px black, 2px 2px 2px black, -2px 2px 2px black; }
+    footer .infoContacto p {
+      text-shadow: -2px -2px 2px black, 2px -2px 2px black, 2px 2px 2px black, -2px 2px 2px black;
+      margin-right: 10px; }
+  footer .totalRedes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; }
+    footer .totalRedes a .redes {
+      height: 40px;
+      margin: 10px;
+      margin-bottom: 20px; }
+
+@media (max-width: 1350px) {
+  .main-index h1 {
+    font-size: 250%; }
+  .main-index .impar {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    align-items: center; }
+    .main-index .impar img {
+      width: 500px; }
+    .main-index .impar p {
+      font-size: large;
+      margin: 5px; }
+  .main-index .par {
+    flex-direction: column-reverse;
+    margin: 5px;
+    padding: 5px;
+    align-items: center; }
+    .main-index .par img {
+      width: 500px; }
+    .main-index .par p {
+      font-size: large;
+      margin: 5px; }
+  .main-bodegas .catena {
+    grid-template-columns: 1fr; }
+    .main-bodegas .catena .img-bodegas1 {
+      grid-template-areas: "cat7 cat2 cat5" "cat7 cat1 cat1"; }
+    .main-bodegas .catena .cat3 {
+      display: none; }
+    .main-bodegas .catena .cat4 {
+      display: none; }
+    .main-bodegas .catena .cat6 {
+      display: none; }
+    .main-bodegas .catena .cat8 {
+      display: none; }
+    .main-bodegas .catena .cat9 {
+      display: none; }
+  .main-bodegas .zuccardi {
+    grid-template-columns: 1fr;
+    grid-template-areas: "text-zuc" "img-zuc"; }
+    .main-bodegas .zuccardi .text-zuccardi {
+      grid-area: text-zuc; }
+    .main-bodegas .zuccardi .img-bodegas2 {
+      grid-area: img-zuc;
+      grid-template-areas: "zuc8 zuc3 zuc3" "zuc7 zuc7 zuc1"; }
+    .main-bodegas .zuccardi .zuc2 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc4 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc5 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc6 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc9 {
+      display: none; }
+  .main-acceder section {
+    grid-template-areas: "nvo" "acc"; } }
+
+@media (max-width: 785px) {
+  header {
+    background-size: auto; }
+    header .logo img {
+      height: 200px; }
+  .main-index h1 {
+    font-size: 200%; }
+  .main-index .impar {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    align-items: center; }
+    .main-index .impar img {
+      width: 300px; }
+    .main-index .impar p {
+      font-size: small;
+      margin: 5px; }
+  .main-index .par {
+    flex-direction: column-reverse;
+    margin: 5px;
+    padding: 5px;
+    align-items: center; }
+    .main-index .par img {
+      width: 300px; }
+    .main-index .par p {
+      font-size: small;
+      margin: 5px; }
+  .main-bodegas .catena {
+    margin: 15px 2px 15px 2px;
+    grid-template-columns: 1fr; }
+    .main-bodegas .catena .text-catena {
+      margin: 0px; }
+      .main-bodegas .catena .text-catena p {
+        margin: 15px 2px 15px 2px;
+        font-size: small; }
+    .main-bodegas .catena .img-bodegas1 {
+      grid-template-areas: "cat2" "cat6"; }
+    .main-bodegas .catena .cat1 {
+      display: none; }
+    .main-bodegas .catena .cat2 {
+      display: block; }
+    .main-bodegas .catena .cat3 {
+      display: none; }
+    .main-bodegas .catena .cat4 {
+      display: none; }
+    .main-bodegas .catena .cat5 {
+      display: none; }
+    .main-bodegas .catena .cat6 {
+      display: block; }
+    .main-bodegas .catena .cat7 {
+      display: none; }
+    .main-bodegas .catena .cat8 {
+      display: none; }
+    .main-bodegas .catena .cat9 {
+      display: none; }
+  .main-bodegas .zuccardi {
+    margin: 15px 2px 15px 2px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "text-zuc" "img-zuc"; }
+    .main-bodegas .zuccardi .text-zuccardi {
+      grid-area: text-zuc;
+      margin: 0px; }
+      .main-bodegas .zuccardi .text-zuccardi p {
+        margin: 15px 2px 15px 2px;
+        font-size: small; }
+    .main-bodegas .zuccardi .img-bodegas2 {
+      grid-area: img-zuc;
+      grid-template-areas: "zuc6" "zuc4"; }
+    .main-bodegas .zuccardi .zuc1 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc2 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc3 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc4 {
+      display: block; }
+    .main-bodegas .zuccardi .zuc5 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc6 {
+      display: block; }
+    .main-bodegas .zuccardi .zuc7 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc8 {
+      display: none; }
+    .main-bodegas .zuccardi .zuc9 {
+      display: none; }
+  .main-contacto {
+    flex-direction: column; }
+    .main-contacto form {
+      order: 0;
+      width: 70%; }
+    .main-contacto iframe {
+      width: 80%; }
+  .main-acceder section .nuevo {
+    grid-template-areas: "nomb nomb" "ape ape" "mail mail" "pass pass" "dir dir" "piso dpto" "city cp" "prov prov" "check check" "enviar enviar"; }
+  footer .infoContacto {
+    width: 175px; }
+    footer .infoContacto h2 {
+      width: 175px; }
+    footer .infoContacto p {
+      font-size: smaller; }
+  footer .totalRedes {
+    flex-direction: column; }
+    footer .totalRedes a .redes {
+      margin: 5px; } }
+
+@media (max-width: 550px) {
+  .main-contacto form {
+    width: 90%; }
+  .main-contacto iframe {
+    width: 100%;
+    height: 300px; }
+  .main-acceder section .nuevo {
+    grid-template-areas: "nomb" "ape" "mail" "pass" "dir" "piso" "dpto" "city" "cp" "prov" "check" "enviar"; }
+    .main-acceder section .nuevo .check div input {
+      width: 20px;
+      height: 20px; }
+    .main-acceder section .nuevo .check div label {
+      font-size: 19px; }
+    .main-acceder section .nuevo .enviar {
+      display: grid;
+      justify-items: center; } }

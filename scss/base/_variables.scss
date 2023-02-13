@@ -1,0 +1,40 @@
+
+/* Extends */
+%input{
+    border: solid black 1px;
+    height: 50px;
+    font-size: 20px;
+}
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexform{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* Variables */
+
+$sombra-letra: -2px -2px 2px black, 2px -2px 2px black, 2px 2px 2px black, -2px 2px 2px black;
+
+/* Listas */
+
+$tamano:
+5px,
+10px,
+15px,
+20px,
+30px,
+40px;
+
+/*  Mixins */
+
+@mixin div ($margin, $grid-area){
+    margin: $margin - 5px;
+    grid-area: $grid-area;
+}
