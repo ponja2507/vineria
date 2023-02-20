@@ -106,20 +106,20 @@ header {
       justify-items: center;
       flex-direction: column;
       flex-wrap: nowrap; }
-      .mainProd .productos divhover {
+      .mainProd .productos div img {
+        height: 250px;
+        width: 200px; }
+      .mainProd .productos div h2 {
+        height: 100px; }
+      .mainProd .productos div button {
+        height: 50px;
+        width: 100px; }
+      .mainProd .productos div:hover {
         box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
         -webkit-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
         -moz-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
         transform: scale(1.1) translateY(-10px);
         border-radius: 10px; }
-        .mainProd .productos divhover img {
-          height: 250px;
-          width: 200px; }
-        .mainProd .productos divhover h2 {
-          height: 100px; }
-        .mainProd .productos divhover button {
-          height: 50px;
-          width: 100px; }
 
 .main-bodegas .catena {
   margin: 20px;

@@ -69,12 +69,6 @@
             justify-items: center;
             flex-direction: column;
             flex-wrap: nowrap;
-            &hover{
-                box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
-                -webkit-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
-                -moz-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
-                transform: scale(1.1) translateY(-10px);
-                border-radius: 10px;
             img {
                 height: 250px;
                 width: 200px;
@@ -86,6 +80,12 @@
                 height: 50px;
                 width: 100px;
             }
+            &:hover{
+                box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+                -webkit-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+                -moz-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
+                transform: scale(1.1) translateY(-10px);
+                border-radius: 10px;
             }
         }
     }
