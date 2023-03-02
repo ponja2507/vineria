@@ -9,7 +9,7 @@
   height: 50px;
   font-size: 20px; }
 
-.mainProd .productos, .mainProd .productos div, .main-bodegas .catena .text-catena, .main-bodegas .zuccardi .text-zuccardi {
+.mainProd .productos, .mainProd .productos div, .main-bodegas .titulo, .main-bodegas .catena .text-catena, .main-bodegas .zuccardi .text-zuccardi, .main-acceder .comunidad {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -80,18 +80,32 @@ header {
       font-size: larger; }
 
 .mainProd {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
-  grid-template-areas: "buscar" "prod"; }
+  align-items: center; }
+  .mainProd h1 {
+    margin: 50px;
+    font-size: 400%;
+    text-align: center; }
   .mainProd .buscador {
-    width: 70%;
-    margin: 20px;
-    padding: 7px;
-    padding-left: 10px;
-    border: 1.5px black solid;
-    border-radius: 4px;
-    font-size: large;
-    grid-area: buscar; }
+    grid-area: buscar;
+    max-width: 1500px;
+    width: 10000em;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .mainProd .buscador .buscar {
+      width: 70%;
+      margin: 20px;
+      padding: 7px;
+      padding-left: 10px;
+      border: 1.5px #0d6efd solid;
+      border-radius: 4px;
+      font-size: large; }
+    .mainProd .buscador button {
+      height: 50px;
+      width: 100px; }
   .mainProd .productos {
     max-width: 1500px;
     flex-wrap: wrap;
@@ -120,6 +134,13 @@ header {
         -moz-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
         transform: scale(1.1) translateY(-10px);
         border-radius: 10px; }
+
+.main-bodegas .titulo {
+  flex-direction: column; }
+  .main-bodegas .titulo h1 {
+    margin: 50px;
+    font-size: 400%;
+    text-align: center; }
 
 .main-bodegas .catena {
   margin: 20px;
@@ -267,6 +288,14 @@ header {
     margin: 25px;
     width: 50%;
     height: 500px; }
+
+.main-acceder .comunidad {
+  background-color: whitesmoke; }
+  .main-acceder .comunidad h1 {
+    background-color: whitesmoke;
+    margin: 10px;
+    font-size: 300%;
+    text-align: center; }
 
 .main-acceder section {
   display: grid;
@@ -437,6 +466,10 @@ footer {
       margin: 10px;
       margin-bottom: 20px; }
 
+@media (max-width: 1580px) {
+  .mainProd .buscador {
+    width: 100%; } }
+
 @media (max-width: 1350px) {
   .main-index h1 {
     font-size: 250%; }
@@ -461,6 +494,8 @@ footer {
     .main-index .par p {
       font-size: large;
       margin: 5px; }
+  .main-bodegas .titulo h1 {
+    font-size: 250%; }
   .main-bodegas .catena {
     grid-template-columns: 1fr; }
     .main-bodegas .catena .img-bodegas1 {
@@ -494,7 +529,9 @@ footer {
     .main-bodegas .zuccardi .zuc9 {
       display: none; }
   .main-acceder section {
-    grid-template-areas: "nvo" "acc"; } }
+    grid-template-areas: "nvo" "acc"; }
+  .mainProd h1 {
+    font-size: 250%; } }
 
 @media (max-width: 785px) {
   header {
@@ -590,6 +627,8 @@ footer {
       width: 70%; }
     .main-contacto iframe {
       width: 80%; }
+  .main-acceder .comunidad h1 {
+    font-size: 250%; }
   .main-acceder section .nuevo {
     grid-template-areas: "nomb nomb" "ape ape" "mail mail" "pass pass" "dir dir" "piso dpto" "city cp" "prov prov" "check check" "enviar enviar"; }
   footer .infoContacto {
@@ -609,6 +648,10 @@ footer {
   .main-contacto iframe {
     width: 100%;
     height: 300px; }
+  .main-bodegas .titulo h1 {
+    margin: 10px; }
+  .main-acceder .comunidad h1 {
+    font-size: 200%; }
   .main-acceder section .nuevo {
     grid-template-areas: "nomb" "ape" "mail" "pass" "dir" "piso" "dpto" "city" "cp" "prov" "check" "enviar"; }
     .main-acceder section .nuevo .check div input {
@@ -618,4 +661,10 @@ footer {
       font-size: 19px; }
     .main-acceder section .nuevo .enviar {
       display: grid;
-      justify-items: center; } }
+      justify-items: center; }
+  .mainProd h1 {
+    text-align: center;
+    font-size: 200%;
+    margin: 10px; }
+  .mainProd .buscador {
+    flex-direction: column; } }

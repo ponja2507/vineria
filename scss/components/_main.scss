@@ -38,20 +38,35 @@
 }
 
 .mainProd {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
-    grid-template-areas:
-        "buscar"
-        "prod";
+    align-items: center;
+    h1{
+        margin: 50px;
+        font-size: 400%;
+        text-align: center;
+    }
     .buscador {
-        width: 70%;
-        margin: nth($tamano, 4);
-        padding: 7px;
-        padding-left: 10px;
-        border: 1.5px black solid;
-        border-radius: 4px;
-        font-size: large;
         grid-area: buscar;
+        max-width: 1500px;
+        width: 10000em;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        .buscar{
+            width: 70%;
+            margin: nth($tamano, 4);
+            padding: 7px;
+            padding-left: 10px;
+            border: 1.5px #0d6efd solid;
+            border-radius: 4px;
+            font-size: large;
+        }
+        button{
+            height: 50px;
+            width: 100px;
+        }
     }
     .productos {
         max-width: 1500px;
@@ -86,12 +101,22 @@
                 -moz-box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.61);
                 transform: scale(1.1) translateY(-10px);
                 border-radius: 10px;
+                
             }
         }
     }
 }
 
 .main-bodegas{
+    .titulo{
+        @extend %flex;
+        flex-direction: column;
+        h1{
+            margin: 50px;
+            font-size: 400%;
+            text-align: center;
+        }
+    }
     .catena {
         margin: nth($tamano, 4);
         display: grid;
@@ -313,6 +338,16 @@
 }
 
 .main-acceder{
+    .comunidad{
+        @extend %flex;
+        background-color: rgb(245, 245, 245);
+        h1{
+            background-color: rgb(245, 245, 245);
+            margin: 10px;
+            font-size: 300%;
+            text-align: center;
+        }
+    }
     section{
         display: grid;
         grid-template-areas: 

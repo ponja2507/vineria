@@ -1,3 +1,11 @@
+@media (max-width: 1580px){
+    .mainProd{
+        .buscador{
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 1350px) {
     .main-index{
         h1 {
@@ -32,6 +40,11 @@
         }
     } 
     .main-bodegas{
+        .titulo{
+            h1 {
+                font-size: 250%;
+            }
+        }
         .catena{
             grid-template-columns: 1fr;
             .img-bodegas1{
@@ -91,6 +104,11 @@
             grid-template-areas: 
             "nvo"
             "acc";
+        }
+    }
+    .mainProd{
+        h1{
+            font-size: 250%;
         }
     }
 }
@@ -243,6 +261,11 @@
     }
 
     .main-acceder{
+        .comunidad{
+            h1{
+                font-size: 250%;
+            }
+        }
         section{
             .nuevo{
                 grid-template-areas: 
@@ -292,7 +315,20 @@
         }
     }
 
+    .main-bodegas{
+        .titulo{
+            h1{
+                margin: 10px;
+            }
+        }
+    }
+
     .main-acceder{
+        .comunidad{
+            h1{
+                font-size: 200%;
+            }
+        }
         section{
             .nuevo{
                 grid-template-areas: 
@@ -324,6 +360,16 @@
                     justify-items: center;
                 }
             }
+        }
+    }
+    .mainProd{
+        h1{
+            text-align: center;
+            font-size: 200%;
+            margin: 10px;
+        }
+        .buscador{
+            flex-direction: column;
         }
     }
 }
